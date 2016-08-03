@@ -1,0 +1,43 @@
+<h2>Kolekcje</h2>
+<table class="collection-list">
+    <thead>
+        <tr>
+            <th>Nazwa</th>
+            <th>Data utworzenia</th>
+            <th>Akcje</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <a href="#" class="name">Projekt 1</a>
+                <a href="#" class="edit-action button"></a>
+            </td>
+            <td class="date">2016/12/03 12:43:12</td>
+            <td>
+                <a href="#" class="delete-action button"></a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<script>
+
+    $(document).ready(function() {
+        $('.collection-list').find('.edit-action').on('click', function() {
+            var editButton = $(this);
+            var nameHtml = editButton.siblings('.name');
+            var name;
+            if (editButton.hasClass('accept')) {
+                editButton.removeClass('accept');
+                name = nameHtml.val();
+                nameHtml.replaceWith($('<a href="#" class="name"></a>').html(name));
+            } else {
+                name = nameHtml.html();
+                editButton.addClass('accept');
+                nameHtml.replaceWith($('<input type="text" class="name" />').val(name));
+            }
+        });
+    });
+
+</script>

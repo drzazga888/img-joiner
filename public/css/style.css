@@ -1,0 +1,167 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'icons';
+  src: url("../fonts/icons.eot?47116424");
+  src: url("../fonts/icons.eot?47116424#iefix") format("embedded-opentype"), url("../fonts/icons.woff2?47116424") format("woff2"), url("../fonts/icons.woff?47116424") format("woff"), url("../fonts/icons.ttf?47116424") format("truetype"), url("../fonts/icons.svg?47116424#icons") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'icons';
+    src: url('../font/icons.svg?47116424#icons') format('svg');
+  }
+}
+*/
+[class^="icon-"]:before, .edit-action, .edit-action.accept, .delete-action, [class*=" icon-"]:before, .edit-action, .edit-action.accept, .delete-action {
+  font-family: "icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+
+.icon-add:before {
+  content: '\e800'; }
+
+/* '' */
+.icon-left:before {
+  content: '\e801'; }
+
+/* '' */
+.icon-right:before {
+  content: '\e802'; }
+
+/* '' */
+.icon-up:before {
+  content: '\e803'; }
+
+/* '' */
+.icon-down:before {
+  content: '\e804'; }
+
+/* '' */
+.icon-delete:before, .delete-action:before {
+  content: '\e805'; }
+
+/* '' */
+.icon-edit:before, .edit-action:before {
+  content: '\e806'; }
+
+/* '' */
+.icon-ok:before, .edit-action.accept:before {
+  content: '\e807'; }
+
+/* '' */
+.icon-horizontal:before {
+  content: '\f141'; }
+
+/* '' */
+.icon-vertical:before {
+  content: '\f142'; }
+
+/* '' */
+@font-face {
+  src: url("../fonts/Existence-Light.otf");
+  font-family: 'Existence Light'; }
+*,
+*:before,
+*:after {
+  color: #D1D4FF; }
+
+body {
+  background: #1F1F1F; }
+
+body,
+input {
+  font-family: 'Existence Light', sans-serif;
+  font-size: 22px; }
+
+h2 {
+  border-bottom: solid 1px #D1D4FF; }
+
+a {
+  text-decoration-style: dashed; }
+
+a:hover,
+a:hover:before,
+a:hover:after {
+  color: #5ED0F0; }
+
+input {
+  background: none;
+  border: none;
+  border-bottom: solid 2px #335182; }
+
+table {
+  margin: 20px auto;
+  border-collapse: collapse; }
+  table tr > * {
+    padding: 10px 20px; }
+  table tbody tr:nth-child(odd) {
+    background: #303030; }
+
+.button {
+  text-decoration: none; }
+
+#site-header {
+  text-align: center; }
+
+/*
+
+.project {
+    border: solid 1px #999;
+}
+
+.project * {
+    margin: 10px;
+}
+
+.project .image {
+    background: #999;
+    min-width: 50px;
+    min-height: 50px;
+}
+
+.project .split {
+    display: flex;
+}
+
+.project .split.vertical {
+    flex-direction: column;
+}
+
+.project .split.horizontal {
+    flex-direction: row;
+}
+
+.project .add {
+    text-align: center;
+    padding: 10px;
+    border: dashed 1px red;
+}
+
+*/
+
+/*# sourceMappingURL=style.css.map */

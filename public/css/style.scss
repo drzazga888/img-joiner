@@ -1,0 +1,133 @@
+@import 'icons';
+
+$color-bkg: #1F1F1F;
+$color-bkg-lighter: #303030;
+$color-element: #335182;
+$color-hover: #5ED0F0;
+$color-normal: #D1D4FF;
+
+@font-face {
+  src: url('../fonts/Existence-Light.otf');
+  font-family: 'Existence Light';
+}
+
+*,
+*:before,
+*:after {
+  color: $color-normal;
+}
+
+body {
+  background:  $color-bkg;
+}
+
+body,
+input {
+  font-family: 'Existence Light', sans-serif;
+  font-size: 22px;
+}
+
+h1 {
+
+}
+
+h2 {
+  border-bottom: solid 1px $color-normal;
+}
+
+a {
+  text-decoration-style: dashed;
+}
+
+a:hover,
+a:hover:before,
+a:hover:after {
+  color: $color-hover;
+}
+
+input {
+  background: none;
+  border: none;
+  border-bottom: solid 2px $color-element;
+}
+
+table {
+
+  margin: 20px auto;
+  border-collapse: collapse;
+
+  tr > * {
+    padding: 10px 20px;
+  }
+
+  tbody {
+
+    tr:nth-child(odd) {
+      background: $color-bkg-lighter;
+    }
+
+  }
+
+}
+
+.button {
+  text-decoration: none;
+}
+
+.edit-action {
+  @extend [class^="icon-"]:before;
+  @extend [class*=" icon-"]:before;
+  @extend .icon-edit;
+}
+
+.edit-action.accept {
+  @extend [class^="icon-"]:before;
+  @extend [class*=" icon-"]:before;
+  @extend .icon-ok;
+}
+
+.delete-action {
+  @extend [class^="icon-"]:before;
+  @extend [class*=" icon-"]:before;
+  @extend .icon-delete;
+}
+
+#site-header {
+  text-align: center;
+}
+
+/*
+
+.project {
+    border: solid 1px #999;
+}
+
+.project * {
+    margin: 10px;
+}
+
+.project .image {
+    background: #999;
+    min-width: 50px;
+    min-height: 50px;
+}
+
+.project .split {
+    display: flex;
+}
+
+.project .split.vertical {
+    flex-direction: column;
+}
+
+.project .split.horizontal {
+    flex-direction: row;
+}
+
+.project .add {
+    text-align: center;
+    padding: 10px;
+    border: dashed 1px red;
+}
+
+*/

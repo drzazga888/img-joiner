@@ -1,0 +1,27 @@
+<?php echo $this->doctype(); ?>
+
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <?php echo $this->headTitle('ImgJoiner') ?>
+
+    <?php echo $this->headMeta()
+        ->appendName('viewport', 'width=device-width, initial-scale=1.0')
+        ->appendHttpEquiv('X-UA-Compatible', 'IE=edge') ?>
+
+    <?php echo $this->headLink()
+        ->appendStylesheet($this->basePath() . '/css/style.css') ?>
+
+    <?php echo $this->headScript()
+        ->appendFile($this->basePath() . '/js/jquery-3.1.0.min.js')
+        ->appendFile($this->basePath() . '/js/scripts.js') ?>
+
+</head>
+<body>
+<header id="site-header">
+    <h1>ImgJoiner</h1>
+    <p>Narzędzie do łączenia zdjęć</p>
+</header>
+<?php echo $this->content; ?>
+</body>
+</html>
